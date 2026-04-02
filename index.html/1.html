@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>织色空间 | 全球地毯直供专家 - Factory-to-Floor</title>
+    <style>
+        /* 品牌配色方案 */
+        :root {
+            --bg-oatmeal: #F5F2ED;        /* 燕麦色：自然质感背景 */
+            --text-charcoal: #333333;     /* 炭黑色：高级感文字 */
+            --accent-terracotta: #C26B4E; /* 赤陶土色：点击与强调 */
+            --secondary-deepsea: #2C3E50; /* 深海蓝：B2B专业感 */
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            color: var(--text-charcoal);
+            background-color: var(--bg-oatmeal);
+            line-height: 1.6;
+        }
+
+        /* 导航栏 */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%; /* 调整 padding 以适应 logo 高度 */
+            background: var(--white);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-image {
+            height: 60px; /* 调整 logo 图片高度 */
+            width: auto;
+            margin-right: 15px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .brand-name-cn {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: var(--text-charcoal); /* 使用炭黑色，与品牌图片一致 */
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .brand-name-en {
+            font-size: 12px;
+            color: #777; /* 稍浅的灰色，作为次级文字 */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .nav-links a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: var(--text-charcoal);
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        /* Hero 视觉区 */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1534349762230-e0cadf78f5db?auto=format&fit=crop&w=1920&q=80'); /* 示例图：高品质客厅地毯 */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 48px; margin-bottom: 10px; }
+        .hero p { font-size: 18px; margin-bottom: 30px; }
+        .cta-button {
+            background-color: var(--accent-terracotta);
+            color: var(--white);
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 2px;
+            font-weight: bold;
+        }
+
+        /* 核心优势模块 */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 60px 5%;
+            background: var(--white);
+        }
+
+        .feature-item { text-align: center; padding: 20px; }
+        .feature-item h3 { font-size: 16px; color: var(--secondary-deepsea); }
+        .feature-item p { font-size: 13px; color: #666; }
+
+        /* 产品分类矩阵 */
+        .categories { padding: 80px 5%; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--white);
+            border: 1px solid #eee;
+            transition: transform 0.3s;
+        }
+
+        .card img { width: 100%; height: 300px; object-fit: cover; }
+        .card-info { padding: 20px; }
+        .tag { font-size: 12px; color: var(--accent-terracotta); font-weight: bold; }
+
+        /* AR与样卡服务模块 */
+        .service-banner {
+            background-color: var(--secondary-deepsea);
+            color: var(--white);
+            padding: 60px 5%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* 页脚 */
+        footer {
+            background: #222;
+            color: #999;
+            padding: 40px 5%;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="https://i.ibb.co/3W6qWbZ/logo-v2.png" alt="织色空间 ZHISE SPACE Logo" class="logo-image"> <div class="logo-text">
+                <h1 class="brand-name-cn">织色空间</h1>
+                <p class="brand-name-en">ZHISE SPACE</p>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#">全线产品</a>
+            <a href="#">按风格定制</a>
+            <a href="#">B2B专区</a>
+            <a href="#">关于我们</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>让高品质的铺地艺术走进全球家庭</h1>
+        <p>通过卓越设计与环保材质，重新定义室内软装体验</p>
+        <a href="#" class="cta-button">立即探索定制方案</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-item">
+            <h3>工厂直供 (Factory-to-Floor)</h3>
+            <p>砍掉中间商，回馈20%-40%溢价</p>
+        </div>
+        <div class="feature-item">
+            <h3>柔性定制响应</h3>
+            <p>1片起订，支持Size on Demand</p>
+        </div>
+        <div class="feature-item">
+            <h3>透明溯源工艺</h3>
+            <p>环保认证（OEKO-TEX）与匠心编织</p>
+        </div>
+        <div class="feature-item">
+            <h3>全天候顾问服务</h3>
+            <p>24/7在线咨询与清洗保养指南</p>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="section-title">
+            <h2>精选地毯矩阵</h2>
+            <p>从极简主义到复古美学，满足不同生活空间</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=800&q=80" alt="可机洗地毯">
+                <div class="card-info">
+                    <span class="tag">生活方式类</span>
+                    <h3>可机洗平铺毯</h3>
+                    <p>宠物/儿童友好，易清理首选</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1575414003591-ece8d0416c7a?auto=format&fit=crop&w=800&q=80" alt="手工羊毛地毯">
+                <div class="card-info">
+                    <span class="tag">艺术设计感</span>
+                    <h3>手工簇绒羊毛地毯</h3>
+                    <p>天然纤维，赋予空间温度与质感</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1594040226829-7f251ab46d80?auto=format&fit=crop&w=800&q=80" alt="真丝地毯">
+                <div class="card-info">
+                    <span class="tag">高端定制</span>
+                    <h3>顶级天然真丝款</h3>
+                    <p>针对别墅与酒店的奢侈级软装</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-banner">
+        <div>
+            <h2>AR 在线试铺</h2>
+            <p>拍照即看效果，消除“买后不合适”的忧虑</p>
+        </div>
+        <div style="width: 1px; height: 100px; background: rgba(255,255,255,0.2);"></div>
+        <div>
+            <h2>B2B 样卡寄送</h2>
+            <p>为室内设计师提供实物触感背书</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 织色空间 (ZHISE SPACE). 全球地毯直供专家 | Factory-to-Floor Expert</p>
+        <p>环保检测证书 | 阻燃测试报告 | 30天无忧退换承诺</p>
+    </footer>
+
+</body>
+</html>
