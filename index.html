@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>织色空间 | 全球地毯直供专家</title>
+    <style>
+        :root {
+            --bg-oatmeal: #F5F2ED;
+            --text-charcoal: #333333;
+            --logo-cyan: #3E606F;
+            --accent-terracotta: #C26B4E;
+        }
+        body { font-family: "Microsoft YaHei", sans-serif; margin: 0; background-color: var(--bg-oatmeal); color: var(--text-charcoal); }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .logo { display: flex; align-items: center; text-decoration: none; color: inherit; }
+        .logo img { height: 40px; margin-right: 10px; }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--text-charcoal); font-size: 14px; }
+        
+        .hero { background: #999; color: white; padding: 100px 5%; text-align: center; }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; }
+        
+        .section-title { text-align: center; margin: 50px 0 30px; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 0 5%; }
+        
+        .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: 0.3s; cursor: pointer; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .tag { color: var(--accent-terracotta); font-size: 12px; font-weight: bold; }
+        h3 { margin: 10px 0; }
+        
+        footer { background: #1a1a1a; color: #888; padding: 40px; text-align: center; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="images/织色.jpg" alt="织色空间">
+            <span style="font-size: 20px; font-weight: bold;">织色空间</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="#">柔性定制</a>
+            <a href="#">B2B专区</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>让高品质的铺地艺术走进全球家庭</h1>
+        <p>直连工厂 (Factory-to-Floor)，重新定义室内软装购买体验。</p>
+    </section>
+
+    <h2 class="section-title">核心系列产品</h2>
+
+    <div class="product-grid">
+        <a href="product-detail.html" style="text-decoration: none; color: inherit;">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1600166898405-da9535204843?w=800" alt="机织毯">
+                <div class="card-content">
+                    <span class="tag">全能生活系列 | 易打理</span>
+                    <h3>易打理机织毯</h3>
+                    <p>主打“可机洗”标签，解决现代家庭清洁难题，直连工厂极致性价比。</p>
+                </div>
+            </div>
+        </a>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1575414003591-ece8d0416c7a?w=800" alt="手工毯">
+            <div class="card-content">
+                <span class="tag">利润款 | 设计感</span>
+                <h3>羊毛混纺艺术毯</h3>
+                <p>强调材质触感与耐用性，适合中高端家居装饰。</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 织色空间 | 全球地毯直供专家</p>
+    </footer>
+
+</body>
+</html>

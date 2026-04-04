@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品详情 - 织色空间</title>
+    <style>
+        :root {
+            --bg-oatmeal: #F5F2ED;
+            --text-charcoal: #333333;
+            --logo-cyan: #3E606F;
+            --accent-terracotta: #C26B4E;
+        }
+        body { font-family: "Microsoft YaHei", sans-serif; margin: 0; background-color: var(--bg-oatmeal); }
+        nav { display: flex; align-items: center; padding: 15px 5%; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .logo { display: flex; align-items: center; text-decoration: none; color: inherit; }
+        .logo img { height: 40px; margin-right: 10px; }
+        
+        .container { max-width: 1100px; margin: 40px auto; display: flex; gap: 40px; padding: 0 20px; flex-wrap: wrap; }
+        .image-box { flex: 1.2; min-width: 300px; }
+        .image-box img { width: 100%; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        
+        .info-box { flex: 1; min-width: 300px; background: white; padding: 40px; border-radius: 8px; }
+        .tag { color: var(--accent-terracotta); font-weight: bold; }
+        .price { font-size: 28px; color: var(--logo-cyan); font-weight: bold; margin: 20px 0; }
+        .usp-list { list-style: none; padding: 0; margin: 30px 0; font-size: 14px; line-height: 2; }
+        .usp-list li::before { content: "✓ "; color: var(--logo-cyan); font-weight: bold; }
+        
+        .btn { display: block; text-align: center; background: var(--logo-cyan); color: white; padding: 15px; text-decoration: none; border-radius: 4px; font-weight: bold; }
+        .back-link { display: inline-block; margin-top: 20px; color: #666; text-decoration: none; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="images/织色.jpg" alt="织色空间">
+            <span style="font-size: 20px; font-weight: bold;">织色空间</span>
+        </a>
+    </nav>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5db?w=1000" alt="机织毯细节">
+        </div>
+
+        <div class="info-box">
+            <span class="tag">全能生活系列 | 易打理</span>
+            <h1>现代几何耐磨机织毯</h1>
+            <div class="price">$49.00 - $129.00</div>
+            
+            <p style="color: #666;">专为现代家庭打造。主打“可机洗”与“宠物友好”双重属性，彻底解决地毯难清理的痛点。</p>
+
+            <ul class="usp-list">
+                <li>Factory-to-Floor：去除中间商，直供性价比</li>
+                <li>4K 真实触感：无色差疑虑，环保无异味</li>
+                <li>AR 在线试铺：支持手机一键预览铺设效果</li>
+                <li>无忧履约：支持 DDP 门到门，30天无忧退换</li>
+            </ul>
+
+            <a href="#" class="btn">向工厂发起询盘 / 获取样卡</a>
+            <a href="index.html" class="back-link">← 返回首页探索更多系列</a>
+        </div>
+    </div>
+
+</body>
+</html>
